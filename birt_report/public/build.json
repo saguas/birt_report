@@ -1,0 +1,8 @@
+{
+	"css/birt_report.css": [
+		"public/css/callouts.css"
+    ],
+	"js/birt_report.js":[
+		"public/js/birt_report.js"
+	]
+}

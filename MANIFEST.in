@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include birt_report *.css
+recursive-include birt_report *.csv
+recursive-include birt_report *.html
+recursive-include birt_report *.ico
+recursive-include birt_report *.js
+recursive-include birt_report *.json
+recursive-include birt_report *.md
+recursive-include birt_report *.png
+recursive-include birt_report *.py
+recursive-include birt_report *.svg
+recursive-include birt_report *.txt
+recursive-exclude birt_report *.pyc

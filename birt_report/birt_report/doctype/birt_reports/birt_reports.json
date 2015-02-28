@@ -1,0 +1,279 @@
+{
+ "allow_copy": 0, 
+ "allow_import": 0, 
+ "allow_rename": 0, 
+ "autoname": "field:birt_report_name", 
+ "creation": "2015-02-16 17:37:17.081905", 
+ "custom": 0, 
+ "docstatus": 0, 
+ "doctype": "DocType", 
+ "document_type": "Master", 
+ "fields": [
+  {
+   "allow_on_submit": 0, 
+   "fieldname": "birt_report_name", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "ignore_user_permissions": 0, 
+   "in_filter": 0, 
+   "in_list_view": 1, 
+   "label": "Birt Report Name", 
+   "no_copy": 0, 
+   "permlevel": 0, 
+   "precision": "", 
+   "print_hide": 0, 
+   "read_only": 0, 
+   "report_hide": 0, 
+   "reqd": 0, 
+   "search_index": 0, 
+   "set_only_once": 0
+  }, 
+  {
+   "description": "Name of doctype document that this report is associated.", 
+   "fieldname": "birt_doctype", 
+   "fieldtype": "Link", 
+   "in_list_view": 1, 
+   "label": "Doctype", 
+   "options": "DocType", 
+   "permlevel": 0, 
+   "precision": ""
+  }, 
+  {
+   "description": "Name of report document that this report is associated.", 
+   "fieldname": "birt_report", 
+   "fieldtype": "Link", 
+   "in_list_view": 1, 
+   "label": "Report", 
+   "options": "Report", 
+   "permlevel": 0, 
+   "precision": ""
+  }, 
+  {
+   "description": "If this report  is for printing information about some doctype then choose Form. If this report is for printing a list of doctype's with some information then choose List.\\nIf this report is for ask by hooks which doctype's then choose Server. Choose General if this report does't require any doctype id and yet you want it in some doctype because of permissions.", 
+   "fieldname": "birt_report_type", 
+   "fieldtype": "Select", 
+   "in_list_view": 1, 
+   "label": "Report for:", 
+   "options": "Form\nList\nServer Hooks\nGeneral", 
+   "permlevel": 0, 
+   "precision": ""
+  }, 
+  {
+   "fieldname": "birt_upload_rptdesign", 
+   "fieldtype": "Attach", 
+   "label": "Upload rptdesign File", 
+   "permlevel": 0, 
+   "precision": ""
+  }, 
+  {
+   "fieldname": "column_break_7", 
+   "fieldtype": "Column Break", 
+   "permlevel": 0, 
+   "precision": ""
+  }, 
+  {
+   "default": "Single", 
+   "description": "The number of copies when print a report.", 
+   "fieldname": "birt_report_number_copies", 
+   "fieldtype": "Select", 
+   "label": "Report Number of Copies", 
+   "options": "Single\nDuplicated\nTriplicate", 
+   "permlevel": 0, 
+   "precision": ""
+  }, 
+  {
+   "default": "0", 
+   "fieldname": "birt_print_all", 
+   "fieldtype": "Check", 
+   "label": "All", 
+   "permlevel": 0, 
+   "precision": ""
+  }, 
+  {
+   "default": "1", 
+   "fieldname": "birt_pdf", 
+   "fieldtype": "Check", 
+   "label": "PDF", 
+   "permlevel": 0, 
+   "precision": ""
+  }, 
+  {
+   "default": "0", 
+   "fieldname": "birt_docx", 
+   "fieldtype": "Check", 
+   "label": "DOCX", 
+   "permlevel": 0, 
+   "precision": ""
+  }, 
+  {
+   "default": "0", 
+   "fieldname": "birt_xlsx", 
+   "fieldtype": "Check", 
+   "label": "XLSX", 
+   "permlevel": 0, 
+   "precision": ""
+  }, 
+  {
+   "default": "0", 
+   "fieldname": "birt_ppt", 
+   "fieldtype": "Check", 
+   "label": "PPT", 
+   "permlevel": 0, 
+   "precision": ""
+  }, 
+  {
+   "default": "0", 
+   "fieldname": "birt_ps", 
+   "fieldtype": "Check", 
+   "label": "PostScript", 
+   "permlevel": 0, 
+   "precision": ""
+  }, 
+  {
+   "default": "0", 
+   "fieldname": "birt_ods", 
+   "fieldtype": "Check", 
+   "label": "ODS", 
+   "permlevel": 0, 
+   "precision": ""
+  }, 
+  {
+   "default": "0", 
+   "fieldname": "birt_odt", 
+   "fieldtype": "Check", 
+   "label": "ODT", 
+   "permlevel": 0, 
+   "precision": ""
+  }, 
+  {
+   "default": "1", 
+   "description": "Send by email.", 
+   "fieldname": "birt_email", 
+   "fieldtype": "Check", 
+   "label": "Email?", 
+   "permlevel": 0, 
+   "precision": ""
+  }, 
+  {
+   "default": "0", 
+   "description": "Remove the report from the list of reports to print.", 
+   "fieldname": "birt_dont_show_report", 
+   "fieldtype": "Check", 
+   "label": "Don't Show report", 
+   "permlevel": 0, 
+   "precision": ""
+  }, 
+  {
+   "fieldname": "report_message:", 
+   "fieldtype": "Section Break", 
+   "label": "Report Message:", 
+   "permlevel": 0, 
+   "precision": ""
+  }, 
+  {
+   "description": "Put here the message that will be used in the dialog that appears when the report has parameters of action 'Ask'.", 
+   "fieldname": "birt_param_message", 
+   "fieldtype": "Text", 
+   "label": "Message", 
+   "permlevel": 0, 
+   "precision": ""
+  }, 
+  {
+   "fieldname": "query_string", 
+   "fieldtype": "Section Break", 
+   "label": "Query String", 
+   "permlevel": 0, 
+   "precision": ""
+  }, 
+  {
+   "fieldname": "query", 
+   "fieldtype": "Long Text", 
+   "hidden": 1, 
+   "permlevel": 0, 
+   "precision": "", 
+   "read_only": 1
+  }, 
+  {
+   "fieldname": "query_html", 
+   "fieldtype": "HTML", 
+   "permlevel": 0, 
+   "precision": "", 
+   "read_only": 1
+  }, 
+  {
+   "fieldname": "parameters:", 
+   "fieldtype": "Section Break", 
+   "label": "Parameters:", 
+   "permlevel": 0, 
+   "precision": ""
+  }, 
+  {
+   "fieldname": "birt_parameters", 
+   "fieldtype": "Table", 
+   "label": "Birt Parameters", 
+   "options": "Birt Parameter", 
+   "permlevel": 0, 
+   "precision": ""
+  }, 
+  {
+   "fieldname": "permission_rules:", 
+   "fieldtype": "Section Break", 
+   "label": "Permission Rules:", 
+   "permlevel": 0, 
+   "precision": ""
+  }, 
+  {
+   "fieldname": "birt_roles", 
+   "fieldtype": "Table", 
+   "label": "Roles", 
+   "options": "Birt PermRole", 
+   "permlevel": 0, 
+   "precision": ""
+  }
+ ], 
+ "hide_heading": 0, 
+ "hide_toolbar": 0, 
+ "in_create": 0, 
+ "in_dialog": 0, 
+ "is_submittable": 0, 
+ "issingle": 0, 
+ "istable": 0, 
+ "modified": "2015-02-17 19:44:36.494083", 
+ "modified_by": "Administrator", 
+ "module": "Birt Report", 
+ "name": "Birt Reports", 
+ "name_case": "", 
+ "owner": "Administrator", 
+ "permissions": [
+  {
+   "amend": 0, 
+   "apply_user_permissions": 0, 
+   "cancel": 0, 
+   "create": 0, 
+   "delete": 0, 
+   "email": 0, 
+   "export": 0, 
+   "import": 0, 
+   "permlevel": 0, 
+   "print": 0, 
+   "read": 1, 
+   "report": 0, 
+   "role": "Accounts User", 
+   "set_user_permissions": 0, 
+   "submit": 0, 
+   "write": 0
+  }, 
+  {
+   "create": 1, 
+   "delete": 1, 
+   "permlevel": 0, 
+   "read": 1, 
+   "role": "Administrator", 
+   "write": 1
+  }
+ ], 
+ "read_only": 0, 
+ "read_only_onload": 0, 
+ "sort_field": "modified", 
+ "sort_order": "DESC"
+}
